@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBD1F3F4-B82A-4732-BE8A-0CF003626195}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CanteenSystem</RootNamespace>
+    <AssemblyName>CanteenSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="banzu\ApplyForm_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\ApplyForm_Form.Designer.cs">
+      <DependentUpon>ApplyForm_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\BanzuOrderEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\BanzuOrderEditForm.Designer.cs">
+      <DependentUpon>BanzuOrderEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\BanzuOrderListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\BanzuOrderListForm.Designer.cs">
+      <DependentUpon>BanzuOrderListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\BanzuOrderListForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\BanzuOrderListForm1.Designer.cs">
+      <DependentUpon>BanzuOrderListForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\BanzuOrderListForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\BanzuOrderListForm2.Designer.cs">
+      <DependentUpon>BanzuOrderListForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\CheckedOrderDataSet.cs">
+      <DependentUpon>CheckedOrderDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\CheckedOrderDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CheckedOrderDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\CheckedOrderReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\CheckedOrderReportForm.Designer.cs">
+      <DependentUpon>CheckedOrderReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\CheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\CheckForm.Designer.cs">
+      <DependentUpon>CheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\CheckOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\CheckOrderForm.Designer.cs">
+      <DependentUpon>CheckOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\OrderListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\OrderListForm.Designer.cs">
+      <DependentUpon>OrderListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\OrderReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\OrderReportForm.Designer.cs">
+      <DependentUpon>OrderReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\ShowOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\ShowOrderForm.Designer.cs">
+      <DependentUpon>ShowOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\AddCantenOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo\AddCantenOrderForm.Designer.cs">
+      <DependentUpon>AddCantenOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDataSet.cs">
+      <DependentUpon>OrderDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\OrderCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\OrderCheckForm.Designer.cs">
+      <DependentUpon>OrderCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\OrderSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\OrderSearch.Designer.cs">
+      <DependentUpon>OrderSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PriceSezrchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PriceSezrchForm.Designer.cs">
+      <DependentUpon>PriceSezrchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\BanzuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\BanzuForm.Designer.cs">
+      <DependentUpon>BanzuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banzu\OrderEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banzu\OrderEditForm.Designer.cs">
+      <DependentUpon>OrderEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\CanteenDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CanteenDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\DemoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo\DemoForm.Designer.cs">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Provider\AddProviderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Provider\AddProviderForm.Designer.cs">
+      <DependentUpon>AddProviderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Provider\ProviderEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Provider\ProviderEditForm.Designer.cs">
+      <DependentUpon>ProviderEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Provider\ProviderManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Provider\ProviderManageForm.Designer.cs">
+      <DependentUpon>ProviderManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseForm.Designer.cs">
+      <DependentUpon>PurchaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\UpdataMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\UpdataMenuForm.Designer.cs">
+      <DependentUpon>UpdataMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\UpdataPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\UpdataPasswordForm.Designer.cs">
+      <DependentUpon>UpdataPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\UpdataUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\UpdataUsersForm.Designer.cs">
+      <DependentUpon>UpdataUsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\UpdateCantenOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo\UpdateCantenOrderForm.Designer.cs">
+      <DependentUpon>UpdateCantenOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\UserLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\UserLoginForm.Designer.cs">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\UserManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\UserManageForm.Designer.cs">
+      <DependentUpon>UserManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\AddGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\AddGroupForm.Designer.cs">
+      <DependentUpon>AddGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\EditGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\EditGroupForm.Designer.cs">
+      <DependentUpon>EditGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManage\UserAuthorizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManage\UserAuthorizeForm.Designer.cs">
+      <DependentUpon>UserAuthorizeForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="banzu\ApplyForm_Form.resx">
+      <DependentUpon>ApplyForm_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\BanzuOrderEditForm.resx">
+      <DependentUpon>BanzuOrderEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\BanzuOrderListForm.resx">
+      <DependentUpon>BanzuOrderListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\BanzuOrderListForm1.resx">
+      <DependentUpon>BanzuOrderListForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\BanzuOrderListForm2.resx">
+      <DependentUpon>BanzuOrderListForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\CheckedOrderReport.rdlc" />
+    <EmbeddedResource Include="banzu\CheckedOrderReportForm.resx">
+      <DependentUpon>CheckedOrderReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\CheckForm.resx">
+      <DependentUpon>CheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\CheckOrderForm.resx">
+      <DependentUpon>CheckOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\OrderListForm.resx">
+      <DependentUpon>OrderListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\OrderReport.rdlc" />
+    <EmbeddedResource Include="banzu\OrderReportForm.resx">
+      <DependentUpon>OrderReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\ShowOrderForm.resx">
+      <DependentUpon>ShowOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo\AddCantenOrderForm.resx">
+      <DependentUpon>AddCantenOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\OrderCheckForm.resx">
+      <DependentUpon>OrderCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\OrderSearch.resx">
+      <DependentUpon>OrderSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PriceSezrchForm.resx">
+      <DependentUpon>PriceSezrchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\BanzuForm.resx">
+      <DependentUpon>BanzuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banzu\OrderEditForm.resx">
+      <DependentUpon>OrderEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo\DemoForm.resx">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Provider\AddProviderForm.resx">
+      <DependentUpon>AddProviderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Provider\ProviderEditForm.resx">
+      <DependentUpon>ProviderEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Provider\ProviderManageForm.resx">
+      <DependentUpon>ProviderManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseForm.resx">
+      <DependentUpon>PurchaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\UpdataMenuForm.resx">
+      <DependentUpon>UpdataMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\UpdataPasswordForm.resx">
+      <DependentUpon>UpdataPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\UpdataUsersForm.resx">
+      <DependentUpon>UpdataUsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo\UpdateCantenOrderForm.resx">
+      <DependentUpon>UpdateCantenOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\UserLoginForm.resx">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\UserManageForm.resx">
+      <DependentUpon>UserManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\AddGroupForm.resx">
+      <DependentUpon>AddGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\EditGroupForm.resx">
+      <DependentUpon>EditGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManage\UserAuthorizeForm.resx">
+      <DependentUpon>UserAuthorizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="banzu\CheckedOrderDataSet.xsc">
+      <DependentUpon>CheckedOrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="banzu\CheckedOrderDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CheckedOrderDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="banzu\CheckedOrderDataSet.xss">
+      <DependentUpon>CheckedOrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDataSet.xsc">
+      <DependentUpon>OrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrderDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OrderDataSet.xss">
+      <DependentUpon>OrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UserManage\CanteenDBDataSet.xsc">
+      <DependentUpon>CanteenDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UserManage\CanteenDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CanteenDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserManage\CanteenDBDataSet.xss">
+      <DependentUpon>CanteenDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CanteenSystem.BusinessLogic\CanteenSystem.BusinessLogic.csproj">
+      <Project>{7db83984-f74c-459f-86e5-02f4b970f207}</Project>
+      <Name>CanteenSystem.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CanteenSystem.Model\CanteenSystem.Model.csproj">
+      <Project>{6da6c9d8-bb0d-4cf8-8b40-a2f640a64fb1}</Project>
+      <Name>CanteenSystem.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelbackground2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

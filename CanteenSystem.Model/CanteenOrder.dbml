@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CanteenDB" Class="CanteenOrderDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PHQ\SQLEXPRESS;Initial Catalog=CanteenDB;Persist Security Info=True;User ID=sa" SettingsObjectName="CanteenSystem.Model.Properties.Settings" SettingsPropertyName="CanteenDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CanteenOrder" Member="CanteenOrder">
+    <Type Name="CanteenOrder">
+      <Column Name="CanteenOrderKeyID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CanteenOrderName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CanteenOrderMoney" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CanteenOrderCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Memo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

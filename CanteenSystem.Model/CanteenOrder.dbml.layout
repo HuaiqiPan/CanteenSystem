@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CanteenOrder">
+  <DataContextMoniker Name="/CanteenOrderDataContext" />
+  <nestedChildShapes>
+    <classShape Id="83f71703-ff95-46f3-818a-ffef3cd41f6b" absoluteBounds="2.75, 1.75, 2, 1.7220992024739581">
+      <DataClassMoniker Name="/CanteenOrderDataContext/CanteenOrder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b12fabd8-5505-475b-9b06-3765dc0f1c24" absoluteBounds="2.7649999999999997, 2.21, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

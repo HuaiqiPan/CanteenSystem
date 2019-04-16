@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CanteenDB" Class="MenuDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PHQ\SQLEXPRESS;Initial Catalog=CanteenDB;Persist Security Info=True;User ID=sa" SettingsObjectName="CanteenSystem.Model.Properties.Settings" SettingsPropertyName="CanteenDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Menu" Member="Menu">
+    <Type Name="Menu">
+      <Column Name="MenuID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MenuName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Unit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MenuQuote" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MenuRate" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MenuPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="InputDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

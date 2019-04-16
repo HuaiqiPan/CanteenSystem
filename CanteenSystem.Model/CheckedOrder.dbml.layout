@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CheckedOrder">
+  <DataContextMoniker Name="/CheckedOrderDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ffaa5e28-70bf-42d7-af86-9aadef385bcb" absoluteBounds="4.375, 2.5, 2, 2.8308638509114581">
+      <DataClassMoniker Name="/CheckedOrderDataContext/CheckedOrder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b3c3cb8-6c18-4e96-829a-583eb33702ab" absoluteBounds="4.39, 2.96, 1.9700000000000002, 2.270863850911458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

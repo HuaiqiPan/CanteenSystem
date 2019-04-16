@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CanteenDB" Class="View_GroupDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PHQ\SQLEXPRESS;Initial Catalog=CanteenDB;Persist Security Info=True;User ID=sa" SettingsObjectName="CanteenSystem.Model.Properties.Settings" SettingsPropertyName="CanteenDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.View_Group" Member="View_Group">
+    <Type Name="View_Group">
+      <Column Name="UsersGroup_ID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GroupID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RealName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GroupName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
